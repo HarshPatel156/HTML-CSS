@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors and it's type in CSS</title>
+    <style>
+        /* 
+        we use selectors to target the html elements
+        p is a selector */
+        p{  
+            /* element selector example */
+            text-align: justify;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: aliceblue;
+            color:darkgreen ;
+        }
+        .Names{
+            /* class selector example */
+            /* it will change all the elemnts attributes who has common class */
+           border: 3px solid; 
+        }
+        #Val{ 
+            /* id selector --> usually we use it when we want to update specfic html element */
+            border: 3px dotted violet;
+        }
+        body,head{
+            /* group selector 
+               we usually use it to group multipal selectors and update their attribute at the same time*/
+            padding: 30pt;
+        }
+        
+    </style>
+</head>
+<body> 
+    <h1 id="Names" class="Names">Selectors and it's type in CSS</h1>
+    <p id="Val">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odio modi dolores minima repudiandae libero aperiam voluptate accusamus repellat vel nesciunt sint culpa eaque suscipit doloremque veritatis eveniet, quidem quod iusto odit maiores est beatae! Quibusdam cupiditate sed aspernatur quos dolorum maiores dicta eligendi similique eius accusantium exercitationem quaerat corporis, optio magnam quo deserunt ab reiciendis ratione! Sint, omnis ducimus magnam nihil perferendis atque possimus officiis! Quis tempore suscipit eligendi aut sed possimus iste pariatur omnis porro optio non delectus sint numquam quae aliquid, doloribus molestias commodi! Voluptatum sunt, aspernatur molestiae natus adipisci voluptas corporis temporibus sint recusandae eligendi itaque dicta inventore maiores magni, vero, odit esse veniam. Molestiae voluptas vel nobis exercitationem assumenda, quas blanditiis? Impedit sit alias, deleniti veniam, iusto minima repellat ex, fuga molestias beatae facilis reiciendis dignissimos deserunt itaque? Delectus accusantium cupiditate totam corrupti corporis vero!</p>
+    <p id="Para" class="Names">The state is bounded primarily by Pakistan to the northwest and by the Indian states of Rajasthan to the north, Madhya Pradesh to the east, and Maharashtra to the southeast. Gujarat also shares a small segment of its southeastern border with the Indian union territory of Dadra and Nagar Haveli, and, together with the Arabian Sea, it surrounds the territory of Daman and Diu. The coastline of Gujarat is 992 miles (1,596 km) long, and no part of the state is more than 100 miles (160 km) from the sea.</p>
+</body>
+</html>
