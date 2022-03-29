@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- common properties of border and backround -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and background</title>
+
+    <style>         
+    body{
+        width: 1150px;
+        border: 3px solid rgb(81, 14, 168);
+        /* thickness design of border   color */
+        border-width: 5px;
+        /* controlers border thickness */
+        border-radius: 10px;
+        /* it will curve the border corner */
+        padding: 30px;
+        background-color: aquamarine;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSclzLJsUL-wqgLs2wzNbSQO8SXyTW2GKek1g&usqp=CAU);
+        background-repeat: no-repeat; 
+        /* it prevants repeatting of image */
+        background-position: center,left;
+        /* this will set the position of image  */
+    }
+    h2{
+        border-bottom: 3px dotted blueviolet;
+        border-top: 2px double sandybrown;
+        border-left:2px dashed yellowgreen ;
+        border-right:2px dashed maroon ;
+        /* if we want to set border individually */
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        height: 35px;
+        /* it will save overall height of border */
+        padding-top: 15px;
+       
+        
+    }
+    
+    </style>
+</head>
+<!-- ul means unorder list and it has three types namely, disc,circle and square -->
+<!-- ol means order lisr and it has types like i , a , numbers etc -->
+<!-- li is useed to get add item in list -->
+<body>
+    <h1>Welcome to pizza hub</h1>
+    <hr>
+    <h2>chef's Menu</h2>
+    <ul type="circle">
+        <li>combos</li>
+        <ul type="disc">
+            <li>2 medium pizzas + dips</li>
+            <li>Large pizza + three drinks</li>
+            <li>Medium pizza + dip</li>
+        </ul>
+
+        <li>make your own</li>
+        <ol type="i">
+            <li>crust type</li>
+            <li>toppings</li>
+            <li>base souce</li>
+            <li>cheese</li>
+        </ol>
+        <li>breads</li>
+        <ul>
+            <li>Garlic bread</li>
+            <li>Half moon cheese bread</li>
+        </ul>
+        <li>popers</li>
+        <ul type="square">
+            <li>coke</li>
+            <li>sprite</li>
+            <li>Canada dry</li>
+            <li>7Up</li>
+        </ul>
+    </ul>
+
+    <!-- everything about tables
+        table hase two main tags 
+        thead -> used to add headings
+        thead has 01> tr tag which is used for column and 
+                  02> th tag which is used for raw
+        tbody -> used to add genral data in table 
+                 01> tr tag which is used for column and
+                 02> td tag which is used for raw
+    -->
+    <br><br><br>
+    <table border="2">
+        <thead>
+            <tr>
+                <td>Stduent Name</td>
+                <td>Stduent Id</td> 
+                <td>Course Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Harsh Vireshkumar Ka Patel</td>
+                <td>132432435</td>
+                <td>Computer Programmer</td>
+            </tr>
+            <tr>
+                <td>Viraj Dharmeshbhai Rabari</td>
+                <td>132433435</td>
+                <td>Software Developer</td>
+            </tr>
+            <tr>
+                <td>Ankiit chandubhai Parmar</td>
+                <td>132433455</td>
+                <td>Network Technician</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
