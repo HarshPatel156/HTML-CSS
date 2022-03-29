@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Fonts properties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- stylesheet link from google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        h1{
+            /* common properties */
+            font-size: medium;
+            font-weight: bold;
+        }
+        p,ol,div{
+            font-size: 20px;
+            line-height: 2em; 
+            /* space between two lines */
+            font-style: italic;
+
+        }
+        #Os-Fonts {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* web safe-font example */
+        }
+        .ImportedFonts{
+            font-family: 'Cinzel', serif;
+        }
+        div{
+            font-family: 'Kaushan Script', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fonts</h1>
+    <p>There are two types of fonts we have</p>
+    <ol>
+        <li id="Os-Fonts">Web Sef-Fonts &raquo;
+            This fonts are pre installed in most of the operating systems.Which means we can diractly use this fonts
+        </li>
+        <li class="ImportedFonts">Web fonts &rarr; This font aren't available by default and in order to use it we need
+            to expoert it from chrom and provide it's link inside the style sheet</li>
+    </ol>
+    <div>
+        In Fonts we have font stack which means a group of various fonts and if any font style fails then it go to other
+        font style.
+    </div>
+</body>
+
+</html>
