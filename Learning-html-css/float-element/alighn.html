@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float-Clear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Indie Flower', cursive;
+        }
+        .box{
+            
+            border: 5px dashed rgb(96, 108, 72);
+            margin: 20px auto;
+            width: 900px;
+           
+        }
+        .items{
+            border: 3px double rgb(124, 96, 137);
+            background-color: rgb(167, 231, 207);
+            padding: 10px 12px;
+            border-radius: 1em;
+            margin: 20px 10px;
+        }
+        #name{
+            float: left;
+            width: 48%;
+            
+        }
+
+        #and{
+            float: right;
+            width:48%;
+            /* clear: left; */
+            
+            
+        }
+        #before{
+            /* float: left; */
+            width: 80%;
+            clear: both;
+            /*  it prevents overlaping of element from right and left */
+        }
+        p,h1{
+            text-align: justify; 
+            /* it will place acoording to space 
+               likewise we have center left right etc; */
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+    <div id="name" class="items">
+        <h2>InfoGraph info - first</h2>
+        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum quam cupiditate quisquam inventore nostrum ipsa quis! Voluptates quo, quam, aliquid qui eaque dolorum error non sit iste nisi impedit inventore accusamus omnis. Unde ipsa incidunt autem, harum dicta repellendus!</p>
+    </div>
+    <div id="and" class="items">
+        <h2>InfoGraph info - second</h2>
+        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum quam cupiditate quisquam inventore nostrum ipsa quis! Voluptates quo, quam, aliquid qui eaque dolorum error non sit iste nisi impedit inventore accusamus omnis. Unde ipsa incidunt autem, harum dicta repellendus!</p>
+    </div>
+    <div id="before" class="items">
+        <h2>InfoGraph info - third</h2>
+        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum quam cupiditate quisquam inventore nostrum ipsa quis! Voluptates quo, quam, aliquid qui eaque dolorum error non sit iste nisi impedit inventore accusamus omnis. Unde ipsa incidunt autem, harum dicta repellendus!</p>
+    </div>
+    </div>
+</body>
+</html>
