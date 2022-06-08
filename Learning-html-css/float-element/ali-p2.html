@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'EB Garamond', serif;
+            }
+
+            .shop {
+                border: 5px solid rgb(47, 56, 30);
+                background-color: rgb(228, 252, 252);
+                margin: 33px auto;
+                width: 800px;
+
+            }
+
+            .item {
+                border: 3px solid blue;
+                padding: 10px 4px;
+                margin: 12px 4px;
+                width: auto;
+            }
+
+            #fruit {
+                float: left;
+                width: 40%;
+            }
+
+            #iceCream {
+                float: left;
+                width:50%;
+            }
+
+            #bicycle {
+                /* float:left; */
+                width:90%;
+                clear: both;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="shop">
+        <div id="fruit" class="item">
+            <h1>Fruit</h1>
+            <p id="info">Fruit is the sweet, fleshy, edible part of a plant. It generally contains seeds. Fruits are
+                usually eaten raw, although some varieties can be cooked. They come in a wide variety of colours, shapes
+                and flavours.</p>
+        </div>
+        <div class="item" id="iceCream">
+            <h1>IceCream</h1>
+            <p id="ice">Ice cream is a colloidal emulsion made with water, ice, milk fat, milk protein, sugar and air.
+                Water and fat have the highest proportions by weight creating an emulsion that has dispersed phase as
+                fat globules. The emulsion is turned into foam by incorporating air cells which are frozen to form
+                dispersed ice cells.</p>
+        </div>
+        <div class="item" id="bicycle">
+            <h1>bicycle</h1>
+            <p id="bicycle">A bicycle, also called a pedal cycle, bike or cycle, is a human-powered or motor-powered
+                assisted, pedal-driven, single-track vehicle, having two wheels ...</p>
+        </div>
+    </div>
+</body>
+
+</html>
