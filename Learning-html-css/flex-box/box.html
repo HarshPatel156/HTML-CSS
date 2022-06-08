@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 100%;
+            height: 500px;
+            display: flex;
+
+            /* flex-box properties */
+            /* It's a default property of flex-direction*/
+            flex-direction: row;
+            /*starts to show boxes in a reverse order*/
+            /* flex-direction: row-reverse; */
+            /*starts to show boxes in a column*/
+            /* flex-direction: column; */
+            /*starts to show boxes in a reverse column*/
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse;  */
+
+            /* short hand to write direction and wrap */
+            /* flex-flow:column wrap-reverse; */
+
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+
+            align-items: center;
+            align-items: stretch;
+            /* Default position of the container */
+            align-items: flex-start;
+            /* align-items: flex-end; */
+        }
+
+        .box {
+            border: 2px solid rgb(65, 95, 65);
+            background-color: rgb(166, 244, 244);
+            margin: 4px;
+            padding: 3px;
+            height: 50px;
+            width: 80px;
+
+
+        }
+
+        #box1 {
+            /* it will change the growing size of box-1 whilw we are changing the page size */
+            flex-grow: 3;
+            order: 4;
+        }
+
+        /* For the order property it will put the higher order last */
+        #box2 {
+            order: 6;
+            flex-shrink: 5;
+
+        }
+
+        #box3 {
+            flex-basis: 250px;
+            /* this property will individualy set the size of container */
+            /* if the flax-direction is row then it will set the width */
+            /* if the flax-direction is coloumn then it will set the height  */
+        }
+
+        #box4 {
+            flex: 3 5 180px;
+            /*grow shrink basis */
+
+        }
+
+        #box5 {
+            /* it will put individual box in center */
+            align-self: center;
+            /* it will put individual box at the begining */
+            align-self: flex-start;
+            /* it will put individual box in end */
+            align-self: flex-end ;
+        }
+
+        h1 {
+            margin: 3px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's talk about Flex-box</h1>
+    <div class="container">
+        <div class="box" id="box1">The box-1</div>
+        <div class="box" id="box2">The box-2</div>
+        <div class="box" id="box3">The box-3</div>
+        <div class="box" id="box4">The box-4</div>
+        <div class="box" id="box5">The box-5</div>
+        <div class="box" id="box6">The box-6</div>
+    </div>
+</body>
+
+</html>

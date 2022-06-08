@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        /* in order to apply z- index the position property should be relative, fix, sticky and absulote */
+        
+        #box1{
+            position: relative;
+            top: 35px;
+            z-index: -210; 
+
+            background-color: red;
+        }
+        /* here box1 has lower z-index than box2 that means box2 will overlap box1 and it also work vise-versa */
+        #box2{
+            position: relative;
+            top: 10px;
+            z-index: 23;
+            background-color: blue;
+        }
+        #box3{
+            /* visibility: hidden;  */
+            /* this property will be hide the object but the space will be visible */
+            background-color: green;
+        }
+        #box4{
+            /* display: none; Completly hide the object and it's space */
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
