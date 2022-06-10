@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: block;
+            width: 300px;
+            margin: 20px auto;
+        }
+        input{
+            display: block;
+        }
+        input[type = 'text']{
+            /* This will specifically target text input type  */
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 255, 255);
+            background-color: blueviolet;
+        }
+        a[target]{
+
+            text-decoration: none;
+            padding-bottom: 10px;
+            font-style: italic;
+        }
+        a[target='_self']{
+            padding-bottom: 10px;
+            font-family: fantasy;
+        }
+        li:nth-child(3){
+            /* this will target third elemet from the list*/
+            color: greenyellow;
+        }
+        li:nth-child(2n+1){
+            /* logic 2(0) = 0 + 1 */
+             /* logic 2(1) = 2 + 1 */
+            /* this will target every odd number */
+            color: rgb(136, 200, 210);
+        }
+        li:nth-child(odd){
+            background-color: chocolate;
+        }
+        li:nth-child(even){
+            color: rgb(48, 62, 206);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="https://google.com" target="_blank">Clik here</a>
+        <a href="https://instagram.com" target="_self">instagram</a>
+        <form action="" class="from-control">
+            <input type="text" placeholder="Type your Name">
+            <input type="password" placeholder="Type your Password">
+            <input type="submit" value="Sbmit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+        </ul>
+    </div>
+</body>
+
+</html>
