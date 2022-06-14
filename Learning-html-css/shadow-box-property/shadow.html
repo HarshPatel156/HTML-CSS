@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        .box {
+            background-color: aquamarine;
+            padding: 15px 15px;
+            margin: 18px 10px;
+
+        }
+
+        /* syntax for box shadow
+        box-shadow: x-offset y-offset color; // by this we'll get shadow at the bottom of box.
+        box-shadow: -x-offset  -y-offset color; // by nagative value we'll get shadow at the top of box.
+        box-shadow: x-offset y-offset blur-radious color; // by this we'll get bloor shadow at the bottom of box.
+        box-shadow: -x-offset -y-offset blur-radious color; // by nagative value we'll get bloor shadow at top of box.
+        box-shadow: x-offset y-offset blur-radious sprad-radious color; // by this we'll contol the bloor shadow spread at the bottom of box.
+        box-shadow: -x-offset -y-offset blur-radious sprad-radious color; // by this we'll contol the bloor shadow spread at the top of box.
+        */
+
+        .box{
+            box-shadow: 14px 20px saddlebrown; /* For the bottom shadow*/
+            box-shadow: -9px -9px gold; /* For the top shadow*/
+ 
+        }
+        #content1{
+            box-shadow: 10px 8px 12px rgb(63, 0, 0); /* For the bloor shadow*/
+            box-shadow: -10px -8px 12px rgb(63, 0, 0); /* For the bloor shadow*/
+        }
+        #content2{
+            box-shadow: 12px 16px 13px 8px greenyellow; /* For the bloor shadow and spread*/
+            box-shadow: inset 10px 15px maroon; /*By inset we can give shadow inside the box*/
+        }
+        #content3{
+            box-shadow: 12px 16px 13px 8px rgba(red, green, blue, 0.7); /* here a means Alpha and it will control the desity of the color. less value means lighter color*/
+            box-shadow: 4px 14px red, 12px 15px blueviolet; /* If we want to give multipal tax-shadow we'll use this syntax*/
+        }
+        h1{
+            text-shadow: 2px 3px whitesmoke; 
+            text-shadow: 4px 3px 3px rgb(243, 143, 143); /*tax shadow with blur radious*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="content1">
+            <h1>Content-1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet quam possimus, adipisci facilis
+                nostrum error porro cum assumenda corporis corrupti consectetur inventore et, ad optio recusandae
+                tenetur ex. Natus dolorum qui debitis voluptatum sapiente atque excepturi repudiandae maxime dicta vero,
+                quo similique placeat, rem at iure quia labore soluta illum corporis recusandae quibusdam eos. Quasi
+                eius deleniti impedit dolore?</p>
+        </div>
+        <div class="box" id="content2">
+            <h1>Content-2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet quam possimus, adipisci facilis
+                nostrum error porro cum assumenda corporis corrupti consectetur inventore et, ad optio recusandae
+                tenetur ex. Natus dolorum qui debitis voluptatum sapiente atque excepturi repudiandae maxime dicta vero,
+                quo similique placeat, rem at iure quia labore soluta illum corporis recusandae quibusdam eos. Quasi
+                eius deleniti impedit dolore?</p>
+        </div>
+        <div class="box" id="content3">
+            <h1>Content-3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet quam possimus, adipisci facilis
+                nostrum error porro cum assumenda corporis corrupti consectetur inventore et, ad optio recusandae
+                tenetur ex. Natus dolorum qui debitis voluptatum sapiente atque excepturi repudiandae maxime dicta vero,
+                quo similique placeat, rem at iure quia labore soluta illum corporis recusandae quibusdam eos. Quasi
+                eius deleniti impedit dolore?</p>
+        </div>
+    </div>
+</body>
+
+</html>
