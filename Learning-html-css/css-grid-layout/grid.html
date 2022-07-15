@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-grid</title>
+
+    <style>
+        .container{
+            display: grid;
+            /* here grid-template-columns(GTC) is used to divide container into the coloumns  */
+            /* if i give only two values to gtc then it will divide eight container into two different coloums  */
+            /* Here we'll get four container as i gave 4 values to gtc*/
+            grid-template-columns: 50px 100px 345px 80px;
+            /* here we are getting three columns and one column value is fix and other two values are auto   */
+            grid-template-columns: 341px auto auto;
+            /* here we will get 5 colums and their height and width are auto */
+            grid-template-columns: repeat(5, auto);
+            grid-gap: 3rem; 
+            /* gap between containers  */
+        }
+        .item{
+
+            border: 2px solid red;
+            background-color: aquamarine;
+            margin: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+<h1>This is a Grid box</h1>
+<div class="container">
+    <div class="item">this is first container</div>
+    <div class="item">this is second container</div>
+    <div class="item">this is third container</div>
+    <div class="item">this is fourth container</div>
+    <div class="item">this is fifth container</div>
+    <div class="item">this is sixth container</div>
+    <div class="item">this is seven container</div>
+    <div class="item">this is eight container</div>
+</div>
+</body>
+</html>

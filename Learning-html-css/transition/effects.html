@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 250px;
+            background-color: aquamarine;
+            margin: 10px 5px;
+            padding: 8px 10px;
+            /* transition-property: background-color;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+            /* Transition short hand */
+             /*          Property   duration  func     dely*/
+            /* transition:background-color 2 ease-in-out .5s; */
+            /* if i have more than 1 properties */
+            transition:all 4s ease-in-out .5s;
+        }
+        .box:hover{
+            background-color: rgb(98, 81, 109);
+            width: 430px;
+            height: 430px;
+            color: white;
+            border-radius: 40px;
+            font-size: 30px;
+            font-style: italic;
+            font-family: fantasy;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the India's number one club.</h1>
+    <div class="container">
+        <div class="box">Hello there!</div>
+    </div>
+</body>
+</html>

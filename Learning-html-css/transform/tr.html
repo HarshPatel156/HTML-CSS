@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 85vh;
+            background-color: rgb(177, 111, 111);
+            border-radius: 35px;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 300px;
+            background-color: rgb(80, 201, 249);
+            border-radius: 20px;
+            transition: all 2s ease-in-out;
+        }
+        .box:hover{
+            /* transform: rotate(360deg);
+            transform: skew(20deg);
+            transform: scale(1.5);
+            /* transform: rotateX(23deg); 
+            transform: translate3d(5);
+            transform: scalex(3); */
+            transform: translate(100px 134px);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hello! Welcome to the website. </div>
+    </div>
+</body>
+</html>
